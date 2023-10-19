@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <div id="App">
-      <div style={{width: '460px', margin: '0 auto'}}>
+      <div style={{width: '460px', margin: '0 auto', display: 'flex'}}>
         <div id="login-section">
           <header>
             <p id="logo"></p>
@@ -139,10 +139,10 @@ function App() {
           </div>
         </div>
       </div>
-      <footer style={{paddingTop: '14px', bottom: 0, position: 'relative'}}>
+      <footer>
           <div className="legalFooter" style={{textAlign: 'center', padding: '14px', backgroundColor: '#F7F9FA'}}>
             <ul className="footerGroup" style={{listStyleType: 'none', textAlign: 'center', margin: 0, padding: 0}}>
-              <li><a target="_blank" href="https://www.paypal.com/au/smarthelp/contact-us" pa-marked="1">Contact Us</a></li>
+              <li><a target="_blank" href="https://www.paypal.com/au/smarthelp/contact-us" pa-marked="1">Help & Contact</a></li>
               <li><a target="_blank" href="https://www.paypal.com/au/webapps/mpp/ua/privacy-full" pa-marked="1">Privacy</a></li>
               <li><a target="_blank" href="https://www.paypal.com/au/webapps/mpp/ua/legalhub-full" pa-marked="1">Legal</a></li>
               <li><a target="_blank" href="https://www.paypal.com/au/webapps/mpp/country-worldwide" pa-marked="1">Worldwide</a></li>

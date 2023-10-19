@@ -25,6 +25,12 @@ button {
   font-size: 1.1rem;
 }
 
+footer {
+  padding-top: 14px;
+  bottom: 0;
+  position: relative;
+}
+
 header {
   margin: 0 auto 13.116%;
   display: flex;
@@ -97,15 +103,6 @@ header {
   overflow: hidden;
   padding: 30px 10% 50px;
 }
-@media (max-width: 767px) { 
-  #login-section {
-    padding: 4.8%;
-    width: 100%;
-    background-color: #fff;
-    border: 0;
-    margin: 0 auto;
-  }
-}
 
 #logo {
   background: transparent url(https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg) top center no-repeat;
@@ -121,4 +118,19 @@ header {
   height: 15px;
   text-align: center;
   font-size: 83.34%;
+}
+
+@media (max-width: 767px) { 
+  #login-section {
+    padding: 4.8%;
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    margin: 0 auto;
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }
