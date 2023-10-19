@@ -1,0 +1,124 @@
+li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 0.65em;
+  font-weight: 600;
+}
+
+a {
+  color: #666;
+  white-space: nowrap;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  border-radius: 25px;
+  height: 48px;
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 32px;
+  margin: 8px 0px;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+header {
+  margin: 0 auto 13.116%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  border: 0.0625rem solid #9da3a6;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+  width: 100%
+}
+
+#App {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+#button-login {
+  background-color: #142c8e;
+  color: white;
+  &:hover {
+    background-color: #2140C1;
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+  }
+  &:active {
+    border: 3px solid #2140C1;
+    background-color: #142c8e;
+    box-shadow: 0px 0px 0px 6px #DFEAFC;
+  }
+}
+
+#button-sign-up {
+  background-color: transparent;
+  color: #142c8e;
+  border: .0125rem solid #142c8e;
+  &:hover {
+    border: 1.5px solid #142c8e;
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+  }
+  &:active {
+    border: 2px solid #1072eb;
+    box-shadow: 0px 0px 0px 4px #DFEAFC;
+  }
+}
+
+#forgot-password {
+  color: #1072eb;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 0 16px;
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+#forgot-password-link {
+  color: #1072eb;
+}
+
+#login-section {
+  margin: 120px auto 0px;
+  border: 1px solid #eaeced;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 30px 10% 50px;
+}
+@media (max-width: 767px) { 
+  #login-section {
+    padding: 4.8%;
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    margin: 0 auto;
+  }
+}
+
+#logo {
+  background: transparent url(https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg) top center no-repeat;
+  width: 34px;
+  height: 40px;
+  margin: 0px;
+}
+
+#separator {
+  border-top: 1px solid #cbd2d6;
+  margin-top: 8.72%;
+  margin-bottom: 4.895%;
+  height: 15px;
+  text-align: center;
+  font-size: 83.34%;
+}
