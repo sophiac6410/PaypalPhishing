@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import { TextField } from '@mui/material';
+import { Alert, TextField} from '@mui/material';
 
 function App() {
   const [email, setEmail] = React.useState('');
@@ -26,7 +26,9 @@ function App() {
   }
   return (
     <div id="App">
-      <div style={{width: '460px', margin: '0 auto', display: 'flex'}}>
+      <Alert sx={{position: 'sticky', top: 0, zIndex: 2, margin: '40px 10%'}} severity="error">
+      This is not a real Paypal login page. Do not enter real credentials. Only for education purposes</Alert>
+      <div style={{width: '460px', margin: '0 auto', display: 'flex', zIndex: 0}}>
         <div id="login-section">
           <header>
             <p id="logo"></p>
@@ -66,7 +68,7 @@ function App() {
                   '&.Mui-focused': {
                     border: 3,
                     borderColor: '#2140C1',
-                    boxShadow: '0px 0px 0px 6px #DFEAFC',
+                    boxShadow: '0px 0px 0px 5px #DFEAFC',
                     backgroundColor: 'transparent',
                   }
                 }
@@ -107,7 +109,7 @@ function App() {
                   '&.Mui-focused': {
                     border: 3,
                     borderColor: '#2140C1',
-                    boxShadow: '0px 0px 0px 6px #DFEAFC',
+                    boxShadow: '0px 0px 0px 5px #DFEAFC',
                     backgroundColor: 'transparent',
                   }
                 }
