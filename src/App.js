@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <div id="App">
-      <Alert sx={{position: 'sticky', top: 0, zIndex: 2, margin: '40px 10%'}} severity="error">
+      <Alert id="alert" sx={{position: 'sticky', top: 0, zIndex: 2, margin: '40px 10%'}} severity="error">
       This is not a real Paypal login page. Do not enter real credentials. Only for education purposes</Alert>
       <div style={{width: '460px', margin: '0 auto', display: 'flex', zIndex: 0}}>
         <div id="login-section">

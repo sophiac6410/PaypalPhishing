@@ -121,6 +121,9 @@ header {
 }
 
 @media (max-width: 767px) { 
+  #alert {
+    margin: 40px 5%;
+  }
   #login-section {
     padding: 4.8%;
     width: 100%;
@@ -129,7 +132,7 @@ header {
     margin: 0 auto;
   }
   footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
   }
