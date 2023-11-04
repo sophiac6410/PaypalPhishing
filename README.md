@@ -1,3 +1,8 @@
+# PayPal Phishing Site
+**WARNING: FOR EDUCATION PURPOSES ONLY**
+
+A PayPal login page to steal user credentials. Sends an email with the credentials once a user clicks Login. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
